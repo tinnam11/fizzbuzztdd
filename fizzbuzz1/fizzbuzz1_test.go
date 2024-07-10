@@ -47,9 +47,18 @@ func TestFive(t *testing.T) {
 	}
 }
 
-func TestSiz(t *testing.T) {
+func TestSix(t *testing.T) {
 	num := 6
 	expect := "Fizz"
+	actual := fizzBuzz(num)
+	if expect != actual {
+		t.Errorf("given num (%d) expect %q actual %q\n", num, expect, actual)
+	}
+}
+
+func TestSeven(t *testing.T) {
+	num := 7
+	expect := "7"
 	actual := fizzBuzz(num)
 	if expect != actual {
 		t.Errorf("given num (%d) expect %q actual %q\n", num, expect, actual)
