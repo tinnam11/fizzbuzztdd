@@ -19,3 +19,12 @@ func TestTwo(t *testing.T) {
 		t.Errorf("given num (%d) expect %q actual %q\n", num, expect, actual)
 	}
 }
+
+func TestThree(t *testing.T) {
+	num := 3
+	expect := "Fizz"
+	actual := fizzBuzz(num)
+	if expect != actual {
+		t.Errorf("given num (%d) expect %q actual %q\n", num, expect, actual)
+	}
+}
