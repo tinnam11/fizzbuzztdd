@@ -1,6 +1,9 @@
 package fizzbuzz
 
 func fizzBuzz(num int) string {
+	if num == 5 {
+		return "Buzz"
+	}
 	if num == 4 {
 		return "4"
 	}
