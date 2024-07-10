@@ -127,3 +127,12 @@ func TestFourteen(t *testing.T) {
 		t.Errorf("given num (%d) expect %q actual %q\n", num, expect, actual)
 	}
 }
+
+func TestFifteen(t *testing.T) {
+	num := 15
+	expect := "FizzBuzz"
+	actual := fizzBuzz(num)
+	if expect != actual {
+		t.Errorf("given num (%d) expect %q actual %q\n", num, expect, actual)
+	}
+}
